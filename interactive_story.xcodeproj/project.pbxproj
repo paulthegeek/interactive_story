@@ -99,9 +99,9 @@
 		7411E8FE1D5D902000AD4A7C /* interactive_story */ = {
 			isa = PBXGroup;
 			children = (
+				7411E9301D5DAF9F00AD4A7C /* controllers */,
+				7411E92F1D5DAF9200AD4A7C /* models */,
 				7411E8FF1D5D902100AD4A7C /* AppDelegate.swift */,
-				7411E9011D5D902100AD4A7C /* ViewController.swift */,
-				7411E92D1D5DA2A800AD4A7C /* InteractiveStory.swift */,
 				7411E9031D5D902100AD4A7C /* Main.storyboard */,
 				7411E9061D5D902100AD4A7C /* Assets.xcassets */,
 				7411E9081D5D902100AD4A7C /* LaunchScreen.storyboard */,
@@ -126,6 +126,22 @@
 				7411E9211D5D902100AD4A7C /* Info.plist */,
 			);
 			path = interactive_storyUITests;
+			sourceTree = "<group>";
+		};
+		7411E92F1D5DAF9200AD4A7C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7411E92D1D5DA2A800AD4A7C /* InteractiveStory.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		7411E9301D5DAF9F00AD4A7C /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7411E9011D5D902100AD4A7C /* ViewController.swift */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
