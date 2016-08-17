@@ -16,6 +16,9 @@
 		7411E9201D5D902100AD4A7C /* interactive_storyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7411E91F1D5D902100AD4A7C /* interactive_storyUITests.swift */; };
 		7411E92E1D5DA2A800AD4A7C /* InteractiveStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7411E92D1D5DA2A800AD4A7C /* InteractiveStory.swift */; };
 		7411E9321D5DE62200AD4A7C /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7411E9311D5DE62200AD4A7C /* PageController.swift */; };
+		747639C21D6431C50000904D /* HappyEnding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 747639BF1D6431C50000904D /* HappyEnding.wav */; };
+		747639C31D6431C50000904D /* Ominous.wav in Resources */ = {isa = PBXBuildFile; fileRef = 747639C01D6431C50000904D /* Ominous.wav */; };
+		747639C41D6431C50000904D /* PageTurn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 747639C11D6431C50000904D /* PageTurn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		7411E9211D5D902100AD4A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7411E92D1D5DA2A800AD4A7C /* InteractiveStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveStory.swift; sourceTree = "<group>"; };
 		7411E9311D5DE62200AD4A7C /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		747639BF1D6431C50000904D /* HappyEnding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = HappyEnding.wav; path = ../../../../Downloads/Sounds/HappyEnding.wav; sourceTree = "<group>"; };
+		747639C01D6431C50000904D /* Ominous.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Ominous.wav; path = ../../../../Downloads/Sounds/Ominous.wav; sourceTree = "<group>"; };
+		747639C11D6431C50000904D /* PageTurn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = PageTurn.wav; path = ../../../../Downloads/Sounds/PageTurn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 			children = (
 				7411E9301D5DAF9F00AD4A7C /* controllers */,
 				7411E92F1D5DAF9200AD4A7C /* models */,
+				747639BE1D64317E0000904D /* resources */,
 				7411E8FF1D5D902100AD4A7C /* AppDelegate.swift */,
 				7411E9031D5D902100AD4A7C /* Main.storyboard */,
 				7411E9061D5D902100AD4A7C /* Assets.xcassets */,
@@ -145,6 +152,16 @@
 				7411E9311D5DE62200AD4A7C /* PageController.swift */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		747639BE1D64317E0000904D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				747639BF1D6431C50000904D /* HappyEnding.wav */,
+				747639C01D6431C50000904D /* Ominous.wav */,
+				747639C11D6431C50000904D /* PageTurn.wav */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +268,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				747639C31D6431C50000904D /* Ominous.wav in Resources */,
 				7411E90A1D5D902100AD4A7C /* LaunchScreen.storyboard in Resources */,
 				7411E9071D5D902100AD4A7C /* Assets.xcassets in Resources */,
+				747639C21D6431C50000904D /* HappyEnding.wav in Resources */,
+				747639C41D6431C50000904D /* PageTurn.wav in Resources */,
 				7411E9051D5D902100AD4A7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +526,7 @@
 				7411E9261D5D902100AD4A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7411E9271D5D902100AD4A7C /* Build configuration list for PBXNativeTarget "interactive_storyTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +535,7 @@
 				7411E9291D5D902100AD4A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7411E92A1D5D902100AD4A7C /* Build configuration list for PBXNativeTarget "interactive_storyUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +544,7 @@
 				7411E92C1D5D902100AD4A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

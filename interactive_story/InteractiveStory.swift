@@ -24,7 +24,7 @@ enum Story {
         switch self {
         case .ReturnTrip: return "ReturnTrip"
         case .TouchDown: return "TouchDown"
-        case .Homeward: return "HomeWard"
+        case .Homeward: return "Homeward"
         case .Rover: return "Rover"
         case .Cave: return "Cave"
         case .Crate: return "Crate"
@@ -38,6 +38,19 @@ enum Story {
 extension Story {
     var artwork: UIImage {
         return UIImage(named: self.rawValue)!
+    }
+    
+    var soundEffectURL: NSURL {
+        let fileName: String
+        switch self {
+        case .Droid, .Home: fileName = "HappyEnding"
+        case .Monster: fileName = "Ominous"
+        default: fileName = "PageTurn"
+        }
+        
+        let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "wav")!
+        
+        return NSURL(fileURLWithPath: path)
     }
     
     var text: String {
